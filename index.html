@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bauang Grapes | Discover Our Town</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <a href="#home" class="logo">🍇 BAUANG GRAPES</a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#history">History</a>
+        <a href="#farms">Grape Farms</a>
+        <a href="#varieties">Varieties</a>
+        <a href="#tourism">Tourism</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-text">
+        <span class="eyebrow">WELCOME TO BAUANG, LA UNION</span>
+
+        <h1>
+            Discover the<br>
+            <span>Grape Capital</span><br>
+            of the North.
+        </h1>
+
+        <p>
+            Explore the story of grape farming in Bauang,
+            discover our local vineyards, and experience
+            the beauty of our town's agricultural heritage.
+        </p>
+
+        <a href="#about" class="btn">Explore Bauang →</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/grapes.png"
+        alt="Fresh grapes">
+
+        <div class="image-caption">
+            <strong>🍇 Bauang, La Union</strong>
+            <small>A town where grapes grow.</small>
+        </div>
+    </div>
+
+</section>
+
+<!-- ABOUT BAUANG -->
+<section class="section" id="about">
+
+    <div class="section-heading">
+        <span class="eyebrow">GET TO KNOW OUR TOWN</span>
+        <h2>About Bauang</h2>
+        <p>Discover what makes our town special.</p>
+    </div>
+
+    <div class="about-grid">
+
+        <img src="images/bg.png"
+        alt="Agricultural landscape">
+
+        <div class="about-text">
+            <h3>A Town of Agriculture and Natural Beauty</h3>
+
+            <p>
+                Bauang is a municipality in the province of
+                La Union, Philippines. It is known for its
+                agricultural products, beautiful beaches,
+                and welcoming community.
+            </p>
+
+            <p>
+                One of its unique agricultural industries
+                is grape farming. Through the years, local
+                farmers have developed vineyards that attract
+                visitors interested in seeing and picking
+                locally grown grapes.
+            </p>
+
+            <p>
+                Because of its agricultural products and
+                tourism attractions, Bauang is also known
+                as the "Fruit Basket of the North."
+            </p>
+
+            <a href="#history" class="text-link">
+                Discover our history →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- HISTORY -->
+<section class="section history" id="history">
+
+    <div class="section-heading">
+        <span class="eyebrow">OUR AGRICULTURAL HERITAGE</span>
+        <h2>The History of Grapes in Bauang</h2>
+        <p>How a simple experiment became a local industry.</p>
+    </div>
+
+    <div class="history-content">
+
+        <img src="images/img.png"
+        alt="Grapes in a vineyard">
+
+        <div>
+            <h3>It All Started in 1972</h3>
+
+            <p>
+                The history of grape farming in Bauang began
+                in 1972 when Avelino Lomboy established
+                Lomboy Farm in Barangay Urayong.
+            </p>
+
+            <p>
+                Despite the tropical climate of the Philippines,
+                he experimented with growing grapes and
+                eventually proved that grape cultivation
+                could succeed in the area.
+            </p>
+
+            <p>
+                His success inspired other families to
+                establish their own grape farms, helping
+                develop Bauang into a known destination
+                for grape production and farm tourism.
+            </p>
+
+            <div class="history-highlight">
+                <h2>1972</h2>
+                <p>The beginning of the pioneering grape farm in Bauang.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GRAPE FARMS -->
+<section class="section farms" id="farms">
+
+    <div class="section-heading">
+        <span class="eyebrow">SUPPORT LOCAL FARMERS</span>
+        <h2>Grape Farms in Bauang</h2>
+        <p>
+            Discover some of the local farms that help
+            make Bauang famous for its grapes.
+        </p>
+    </div>
+
+    <div class="farm-grid">
+
+        <div class="farm-card"
+        onclick="showFarm('lomboy')">
+
+            <img src="images/images.png"
+            alt="Grape vineyard">
+
+            <div class="farm-info">
+                <span>BRGY. URAYONG</span>
+                <h3>Lomboy Farms</h3>
+                <p>
+                    The pioneering vineyard associated
+                    with the beginning of grape farming
+                    in Bauang.
+                </p>
+                <button>View Farm Details ↗</button>
+            </div>
+        </div>
+
+        <div class="farm-card"
+        onclick="showFarm('gapuz')">
+
+            <img src="images/photo.png"
+            alt="Grape clusters">
+
+            <div class="farm-info">
+                <span>BAUANG, LA UNION</span>
+                <h3>Gapuz Grapes Farm</h3>
+                <p>
+                    A family-owned farm known for
+                    its grape-growing and pick-and-pay
+                    experience.
+                </p>
+                <button>View Farm Details ↗</button>
+            </div>
+        </div>
+
+        <div class="farm-card"
+        onclick="showFarm('manguerra')">
+
+            <img src="images/mangue.png"
+            alt="Dark grapes">
+
+            <div class="farm-info">
+                <span>BAUANG, LA UNION</span>
+                <h3>Manguerra Grapes Farm</h3>
+                <p>
+                    One of the family-owned grape farms
+                    included in Bauang's agricultural
+                    and tourism community.
+                </p>
+                <button>View Farm Details ↗</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FARM POPUP -->
+<div class="modal" id="farmModal">
+
+    <div class="modal-content">
+
+        <button class="close-btn"
+        onclick="closeFarm()">×</button>
+
+        <img id="farmImage" src="" alt="Local grape farm">
+
+        <div class="modal-info">
+            <span class="eyebrow">BAUANG GRAPE FARM</span>
+
+            <h2 id="farmName"></h2>
+
+            <p id="farmDescription"></p>
+
+            <h3>What Makes It Special?</h3>
+
+            <p id="farmActivity"></p>
+
+            <p class="location-text" id="farmLocation"></p>
+        </div>
+
+    </div>
+</div>
+
+<!-- GRAPE VARIETIES -->
+<section class="section varieties" id="varieties">
+
+    <div class="section-heading">
+        <span class="eyebrow">LEARN ABOUT OUR GRAPES</span>
+        <h2>Grape Varieties</h2>
+        <p>
+            Discover some varieties reported among
+            grape growers in Bauang.
+        </p>
+    </div>
+
+    <div class="grape-grid">
+
+        <div class="grape-card"
+        onclick="showGrape('cardinal')">
+
+            <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=600"
+            alt="Red grapes">
+
+            <div class="card-info">
+                <h3>Red Cardinal</h3>
+                <p>A red grape variety grown by local farmers.</p>
+                <button>Learn More →</button>
+            </div>
+        </div>
+
+        <div class="grape-card"
+        onclick="showGrape('malaga')">
+
+            <img src="https://images.unsplash.com/photo-1596363505729-4190a9506133?w=600"
+            alt="Green grapes">
+
+            <div class="card-info">
+                <h3>White Malaga</h3>
+                <p>A greenish grape variety reported in local farms.</p>
+                <button>Learn More →</button>
+            </div>
+        </div>
+
+        <div class="grape-card"
+        onclick="showGrape('ribier')">
+
+            <img src="images/downlaod.png"
+            alt="Dark grapes">
+
+            <div class="card-info">
+                <h3>Black Ribier</h3>
+                <p>A dark-skinned grape variety.</p>
+                <button>Learn More →</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- GRAPE TOURISM -->
+<section class="section tourism" id="tourism">
+
+    <div class="section-heading">
+        <span class="eyebrow">EXPERIENCE BAUANG</span>
+        <h2>Grape Farming and Tourism</h2>
+        <p>More than just growing fruits, it is an experience.</p>
+    </div>
+
+    <div class="tourism-grid">
+
+        <div class="tourism-card">
+            <div class="tour-icon">🍇</div>
+            <h3>Grape Picking</h3>
+            <p>
+                Visitors can experience picking grapes
+                directly from the vines when the fruits
+                are ready for harvest.
+            </p>
+        </div>
+
+        <div class="tourism-card">
+            <div class="tour-icon">📸</div>
+            <h3>Farm Visits</h3>
+            <p>
+                Visitors can explore vineyards, take
+                pictures, and learn about local
+                grape cultivation.
+            </p>
+        </div>
+
+        <div class="tourism-card">
+            <div class="tour-icon">🛍️</div>
+            <h3>Local Products</h3>
+            <p>
+                Some farms offer grape-based products
+                and locally made souvenirs for visitors.
+            </p>
+        </div>
+
+        <div class="tourism-card">
+            <div class="tour-icon">🌱</div>
+            <h3>Local Livelihood</h3>
+            <p>
+                Grape farming creates opportunities
+                for local farmers, family businesses,
+                and tourism-related activities.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="tourism-note">
+        <h3>Planning to Visit a Grape Farm?</h3>
+        <p>
+            Grape picking is seasonal. Contact the farm
+            before visiting to check harvest availability,
+            entrance arrangements, and current prices.
+        </p>
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+<section class="section gallery" id="gallery">
+
+    <div class="section-heading">
+        <span class="eyebrow">A GLIMPSE OF OUR TOWN</span>
+        <h2>Bauang Grape Gallery</h2>
+        <p>Explore the beauty of grape farming.</p>
+    </div>
+
+    <div class="gallery-grid">
+
+        <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=800"
+        alt="Grapes">
+
+        <img src="images/mangue.png"
+        alt="Dark grape clusters">
+
+        <img src="images/images.png"
+        alt="Vineyard">
+
+        <img src="https://images.unsplash.com/photo-1596363505729-4190a9506133?w=800"
+        alt="Green grapes">
+
+    </div>
+
+</section>
+
+<!-- DID YOU KNOW -->
+<section class="fun-facts">
+
+    <span class="eyebrow">LOCAL GRAPE KNOWLEDGE</span>
+
+    <h2>Did You Know? 🍇</h2>
+
+    <p id="factText">
+        Bauang is home to one of the pioneering grape farms
+        in the Philippines.
+    </p>
+
+    <button class="btn" onclick="newFact()">
+        Discover Another Fact ✨
+    </button>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h2>🍇 BAUANG GRAPES</h2>
+
+    <p>
+        Discover the beauty, history, and agricultural
+        heritage of Bauang, La Union.
+    </p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#farms">Farms</a>
+        <a href="#tourism">Tourism</a>
+        <a href="#gallery">Gallery</a>
+    </div>
+
+</footer>
+
+</body>
+</html>

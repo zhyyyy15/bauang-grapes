@@ -1,0 +1,734 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --purple: #684477;
+    --dark: #35243f;
+    --light: #eee7f2;
+    --green: #788b6d;
+    --cream: #faf8f3;
+    --white: #ffffff;
+    --text: #5c5660;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+header {
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 15px #00000008;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 23px;
+    color: var(--purple);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--text);
+    font-size: 13px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--purple);
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 620px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(120deg, #eee6f2, #f8f5ec);
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.eyebrow {
+    color: var(--green);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1.15;
+    color: var(--dark);
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: var(--purple);
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    max-width: 480px;
+    font-size: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 30px;
+    background: var(--purple);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: var(--dark);
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    width: 47%;
+    max-width: 500px;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 180px 180px 25px 25px;
+    box-shadow: 0 15px 40px #35243f25;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 20px;
+    left: -25px;
+    background: white;
+    padding: 15px 22px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #00000015;
+}
+
+.image-caption strong,
+.image-caption small {
+    display: block;
+}
+
+.image-caption strong {
+    color: var(--purple);
+}
+
+.image-caption small {
+    color: #888;
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 90px 10%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    color: var(--dark);
+    margin: 10px 0;
+}
+
+.section-heading p {
+    font-size: 14px;
+    color: #888;
+}
+
+/* ABOUT AND HISTORY */
+
+.about-grid,
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.about-grid img,
+.history-content img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-text h3,
+.history-content h3 {
+    font-size: 30px;
+    color: var(--purple);
+    margin-bottom: 20px;
+}
+
+.about-text p,
+.history-content p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.text-link {
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.history {
+    background: #f0eaf3;
+}
+
+.history-highlight {
+    background: white;
+    border-left: 4px solid var(--purple);
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.history-highlight h2 {
+    font-size: 38px;
+    color: var(--purple);
+}
+
+.history-highlight p {
+    margin: 0;
+}
+
+/* FARM CARDS */
+
+.farms {
+    background: white;
+}
+
+.farm-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.farm-card {
+    background: var(--cream);
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.farm-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px #00000015;
+}
+
+.farm-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.farm-info {
+    padding: 23px;
+}
+
+.farm-info span {
+    font-size: 10px;
+    color: var(--green);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.farm-info h3 {
+    font-size: 24px;
+    color: var(--purple);
+    margin: 8px 0;
+}
+
+.farm-info p {
+    font-size: 13px;
+}
+
+.farm-info button {
+    margin-top: 18px;
+    background: none;
+    border: none;
+    color: var(--purple);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* POPUP */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: #201729bd;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 20px;
+    animation: popup .3s ease;
+}
+
+.modal-content > img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.modal-info {
+    padding: 30px;
+}
+
+.modal-info h2 {
+    color: var(--purple);
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.modal-info h3 {
+    color: var(--green);
+    margin: 20px 0 5px;
+}
+
+.modal-info p {
+    font-size: 14px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 38px;
+    height: 38px;
+    background: var(--purple);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.location-text {
+    margin-top: 20px;
+    color: var(--green);
+    font-weight: bold;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: scale(.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* GRAPE VARIETIES */
+
+.varieties {
+    background: #f0eaf3;
+}
+
+.grape-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.grape-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.grape-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px #00000015;
+}
+
+.grape-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 22px;
+}
+
+.card-info h3 {
+    color: var(--purple);
+    font-size: 24px;
+}
+
+.card-info p {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.card-info button {
+    background: none;
+    border: none;
+    color: var(--purple);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* TOURISM */
+
+.tourism {
+    background: white;
+}
+
+.tourism-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tourism-card {
+    background: var(--cream);
+    border-radius: 15px;
+    padding: 30px 20px;
+    transition: .3s;
+}
+
+.tourism-card:hover {
+    background: var(--light);
+    transform: translateY(-5px);
+}
+
+.tour-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.tourism-card h3 {
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+.tourism-card p {
+    font-size: 13px;
+}
+
+.tourism-note {
+    background: var(--light);
+    margin-top: 35px;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid var(--green);
+}
+
+.tourism-note h3 {
+    color: var(--purple);
+    margin-bottom: 8px;
+}
+
+.tourism-note p {
+    font-size: 14px;
+}
+
+/* GALLERY */
+
+.gallery {
+    background: #f0eaf3;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+.gallery-note {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* FUN FACTS */
+
+.fun-facts {
+    background: var(--dark);
+    color: white;
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.fun-facts .eyebrow {
+    color: #c1d0b5;
+}
+
+.fun-facts h2 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.fun-facts p {
+    max-width: 650px;
+    min-height: 55px;
+    margin: 0 auto 25px;
+}
+
+.fun-facts .btn {
+    background: var(--green);
+}
+
+.fun-facts .btn:hover {
+    background: #5c7355;
+}
+
+/* FOOTER */
+
+footer {
+    background: #281b31;
+    color: white;
+    text-align: center;
+    padding: 50px 10% 25px;
+}
+
+footer h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #d4cbdc;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #c1d0b5;
+}
+
+.copyright {
+    border-top: 1px solid #ffffff25;
+    padding-top: 20px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media(max-width: 1000px) {
+
+    .farm-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tourism-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    header {
+        padding: 16px 6%;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 0 10px 15px #00000010;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 65px 7%;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 330px;
+    }
+
+    .image-caption {
+        left: 5px;
+    }
+
+    .section {
+        padding: 70px 7%;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .about-grid,
+    .history-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-grid img,
+    .history-content img {
+        height: 280px;
+    }
+
+    .grape-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 480px) {
+
+    .farm-grid,
+    .grape-grid,
+    .tourism-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-image img {
+        height: 280px;
+    }
+
+    .modal-info {
+        padding: 22px;
+    }
+
+    .modal-content > img {
+        height: 210px;
+    }
+
+}
